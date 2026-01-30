@@ -1,16 +1,73 @@
-# React + Vite
+# 🚀 Realtime Collaborative Code Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **production-ready realtime collaborative code editor** that enables multiple users to write and edit code together instantly.  
+Designed to demonstrate **full-stack engineering skills**, **real-time system design**, and **scalable WebSocket communication**.
 
-Currently, two official plugins are available:
+🔴 **Live Demo:** https://realtime-code-sync-editor-rgqs.onrender.com/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Project Objective 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was built to:
+- Demonstrate **real-time data synchronization** using WebSockets
+- Showcase **frontend + backend system design**
+- Solve a **real developer problem**: collaborative coding without heavy IDEs
 
-## Expanding the ESLint configuration
+It reflects real-world use cases such as **pair programming, remote interviews, and online teaching**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 💡 Key Features 
+
+- 🔄 **Realtime bi-directional communication** using Socket.IO  
+- 🧩 **Room-based architecture** for scalable multi-user sessions  
+- ⚡ **Low-latency code synchronization** across all connected clients  
+- 🎨 **Developer-friendly code editor** with syntax highlighting  
+- 🌐 **Deployed & production-tested** on Render  
+
+---
+
+## 🧠 System Architecture
+
+**Frontend (React)**
+- Manages editor state and user interactions  
+- Emits code changes via WebSockets  
+- Updates UI instantly on server broadcasts  
+
+**Backend (Node.js + Express)**
+- Manages room creation & user connections  
+- Listens for editor updates  
+- Broadcasts changes to all clients in the same room  
+
+**Communication Layer**
+- WebSockets (Socket.IO) for real-time, event-driven updates  
+
+This architecture ensures **scalability, performance, and reliability**.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technologies |
+|------------|-------------|
+| Frontend   | React.js, CodeMirror |
+| Backend    | Node.js, Express.js |
+| Realtime   | Socket.IO (WebSockets) |
+| Deployment | Render |
+| Version Control | Git, GitHub |
+
+---
+
+## 📸 Screenshots
+
+![Realtime Editor](./screenshots/codesync1.png)
+![Multi-user Collaboration](./screenshots/codesync2.png)
+
+---
+
+## ⚙️ Local Setup (Optional for Reviewers)
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
